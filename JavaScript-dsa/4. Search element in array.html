@@ -1,1 +1,40 @@
+//SEARCH ELEMENT IN ARRAY - LINEAR SEARCH
 
+//DIRECT METHOD
+let data =[20,40,60,5,10,70,80,99];
+let item=70;
+console.log(data.indexOf(item));
+
+
+//INDIRECT METHOD
+let data =[20,40,60,5,10,70,80,99];
+let item=70; //TO BE SEARCHED
+let index=undefined; 
+
+    for(i=0;i<=data.length-1;i++){
+        if(data[i]===item) {
+          index=i;
+          break;
+        }
+    }
+    
+//With Input & Button
+/*HTML*\
+<input type="text" id="searchEl">
+<button onclick="searchElement()" >Search Element</button>
+
+
+/*JAVASCRIPT*\
+function searchElement(){
+  let data =[20,40,60,5,10,70,80,99];
+  let item=document.getElementByI('searchEl').value;
+  let index=undefined;
+  
+    for(i=0;i<=data.length-1;i++){
+        if(data[i]===parseInt(item)) {
+            index=i;
+            break;
+        }
+    }
+    console.warn(index);
+}
