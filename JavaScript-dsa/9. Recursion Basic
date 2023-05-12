@@ -1,1 +1,14 @@
 
+title>Recursion</title>
+        
+function factorial(item){
+    if(item==0){
+        return 1;
+    }
+    return item*factorial(item-1);
+}
+
+
+//CALLING THE FUNCTION     
+let data =5
+console.warn(factorial(data))
