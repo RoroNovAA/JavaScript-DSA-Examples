@@ -6,7 +6,7 @@ let totalApple = 0;
 function buyApple(x) {
   if (x > 0) {
      console.warn("I have", x, "RS", totalApple);
-     buyMore(x - 10);
+     buyMore(x);
   } else {
      console.warn("I don't have more money", totalApple);
   }
