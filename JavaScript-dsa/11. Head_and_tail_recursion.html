@@ -1,1 +1,33 @@
+<title>Head and Tail Recursion</title>
+
+//If a recursive call is made before it performs its own task,
+its called Head Recursion.
+
+function test(x) {
+    if(x == 0) {
+       return;
+    } else {
+      test(x-1);
+      console.log(x);
+    }
+}
+
+let data=5;
+test(data);
+
+//If recursive call is made at the end of the function after
+it performs its own task, it is called tail Recursion.
+
+function test(x) {
+    if(x == 0) {
+       return;
+    } else {
+      console.log(x);
+      test(x-1);
+      );
+    }
+}
+
+let data=5;
+test(data);
 
