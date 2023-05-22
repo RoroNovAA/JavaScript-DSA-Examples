@@ -14,11 +14,6 @@ function enqueueWithBtn() {
     }
 }
 
-//Display
-function display() {
-    console.warn(queue);
-}
-
 //Dequeue
 function dequeue() {
     if (!isEmpty()) {
@@ -30,6 +25,11 @@ function dequeue() {
     } else {
         alert("queue is already empty");
     }
+}
+
+//Display
+function display() {
+    console.warn(queue);
 }
 
 //Front
